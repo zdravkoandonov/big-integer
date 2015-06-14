@@ -166,11 +166,6 @@ int BigInteger::getSize() const
 	return digits.size();
 }
 
-ulong BigInteger::getBigDigit(int index) const
-{
-	return bigDigits[index];
-}
-
 void BigInteger::changeBase()
 {
 	if (base == 10)

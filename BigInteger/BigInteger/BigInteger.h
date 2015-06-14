@@ -42,7 +42,6 @@ public:
 	BigInteger getAbs() const;
 	bool isPositive() const;
 	int getSize() const;
-	ulong getBigDigit(int index) const;
 
 private:
 	void changeBase();
@@ -62,8 +61,10 @@ public:
 	BigInteger operator-(const BigInteger&) const;
 	BigInteger& operator-=(const BigInteger&);
 
+private:
 	BigInteger& subtractSmallerPositiveDec(const BigInteger &smaller);
 
+public:
 	BigInteger operator*(const BigInteger&) const;
 	BigInteger operator*(char) const;
 	BigInteger& operator*=(const BigInteger&);
